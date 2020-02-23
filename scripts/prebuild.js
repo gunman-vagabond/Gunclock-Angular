@@ -9,7 +9,7 @@ var targetEnvironemntFileName = 'environment.ts';
 var defaultEnvValues = {
     SOME_HOST: "http://default.com",
     _GUNCLOCK_API: "http://192.168.11.11:3000/gunclock",
-    GUNCLOCK_API: "https://gunclock-api-express.herokuapp.com/gunclock___"
+    GUNCLOCK_API: "https://gunclock-api-express.herokuapp.com/gunclock"
 };
 var environmentTemplate = fs.readFileSync(path.join(environmentFilesDirectory, targetEnvironmentTemplateFileName), { encoding: 'utf-8' });
 var obj = Object.assign({}, defaultEnvValues, process.env);
