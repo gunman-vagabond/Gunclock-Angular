@@ -1,0 +1,15 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-gunclock-edit',
+  templateUrl: './gunclock-edit.component.html',
+  styleUrls: ['./gunclock-edit.component.css']
+})
+export class GunclockEditComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+}

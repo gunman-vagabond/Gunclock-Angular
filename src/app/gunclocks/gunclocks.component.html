@@ -1,0 +1,28 @@
+<h1>Listing Gunclocks</h1>
+<table border="1">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>color</th>
+      <th>size</th>
+      <th>date</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let gunclock of gunclocks">
+      <td>{{ gunclock._id }}</td>
+      <td [style.background-color]="gunclock.color">{{ gunclock.color }}</td>
+      <td>{{ gunclock.size }}</td>
+      <td>{{ gunclock.updated }}</td>
+      <td><a href="/gunclock/read/{{ gunclock._id }}">show</a></td>
+      <td><a href="/gunclock/edit/{{ gunclock._id }}">edit</a></td>
+      <td><a href="/gunclock/delete/{{ gunclock._id }}">delete</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<a href="/gunclock/new">new gunclock</a>

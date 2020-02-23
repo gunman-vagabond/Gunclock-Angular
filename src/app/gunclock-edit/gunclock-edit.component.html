@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>New Gunclock</title>
+  </head>
+  <body>
+    <h1>New Gunclock</h1>
+
+    <form>
+      <label>color:</label>
+      <input type="text" name="color" [(ngModel)]="gunclock.color" />
+
+      &nbsp;
+
+      <label>size:</label>
+      <input type="text" name="size" [(ngModel)]="gunclock.size" />
+
+      &nbsp;
+
+      <button (click)="submit()">update</button>
+    </form>
+
+    <a href="/gunclocks">List of Gunclocks</a>
+  </body>
+</html>
+

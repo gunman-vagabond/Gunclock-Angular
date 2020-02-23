@@ -1,0 +1,15 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-gunclocks',
+  templateUrl: './gunclocks.component.html',
+  styleUrls: ['./gunclocks.component.css']
+})
+export class GunclocksComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+}

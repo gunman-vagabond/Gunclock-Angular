@@ -1,0 +1,45 @@
+<h1 [style.background-color]="gunclock.color">Show Gunclock</h1>
+
+<script src="./GunClock.jQuery.js">
+</script>
+
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>color</th>
+      <th>size</th>
+      <th>date</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>{{ gunclock._id }}</td>
+      <td [style.background-color]="gunclock.color">{{ gunclock.color }}</td>
+      <td>{{ gunclock.size }}</td>
+      <td>{{ gunclock.updated }}</td>
+      <td><a href="/gunclock/read/{{ gunclock._id }}">show</a></td>
+      <td><a href="/gunclock/edit/{{ gunclock._id }}">edit</a></td>
+      <td><a href="/gunclock/delete/{{ gunclock._id }}">delete</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<table border="1">
+  <tr><td>
+  <pre id="GunClock" [style.background-color]="gunclock.color">
+  {{ gunclockString }}
+  </pre>
+  </td></tr>
+</table>
+
+<br>
+
+<a href="/gunclocks">List of Gunclocks</a>
