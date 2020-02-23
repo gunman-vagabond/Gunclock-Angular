@@ -8,7 +8,8 @@ const targetEnvironemntFileName = 'environment.ts';
 
 const defaultEnvValues = {
     SOME_HOST: "http://default.com",
-    GUNCLOCK_API: "http://192.168.11.11:3000/gunclock"
+    _GUNCLOCK_API: "http://192.168.11.11:3000/gunclock",
+    GUNCLOCK_API: "https://gunclock-api-express.herokuapp.com/gunclock"
 }
 
 const environmentTemplate = fs.readFileSync(
