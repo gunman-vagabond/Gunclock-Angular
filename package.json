@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "postinstall": "npm run build",
-    "prebuild": "export GUNCLOCK_API=https://gunclock-api-express.herokuapp.com/gunclock && tsc scripts/prebuild.ts && node scripts/prebuild.js",
+    "prebuild": "export GUNCLOCK_API=http://gunman.mydns.jp:3000/gunclock && tsc scripts/prebuild.ts && node scripts/prebuild.js",
     "start": "node server.js",
     "build": "ng build",
     "test": "ng test",
@@ -49,3 +49,4 @@
     "typescript": "~3.7.5"
   }
 }
+
